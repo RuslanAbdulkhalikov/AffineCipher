@@ -10,6 +10,6 @@ def Encryption(source_text, alphabet, a, b):
     return result.upper()
 
 
-print(Encryption(input("Текст для шифрования: "),
-           input("Алфавит: "),
-           int(input("Ключ A: ")), int(input("Ключ B: "))))
+print(Encryption(input("Text to encrypt: "),
+           input("Alphabet: "),
+           int(input("Key A: ")), int(input("Key B: "))))
