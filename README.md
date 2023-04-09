@@ -1,16 +1,17 @@
 # Affine Cipher
 
 ### Encryption Example
+---
+> Input Text: ATTACKATADAWN
 
-**Input Text: ATTACKATADAWN**
+> KEY A = 3
 
-> KEY A = 3,
 > KEY B = 4
 
 ![image](https://user-images.githubusercontent.com/93444395/230776358-a8e56f06-adf3-40b6-b4d8-5079490ed09b.png)
-# 
-### Decryption Example
 
+### Decryption Example
+---
 _When the keys are known:_
 
 ![image](https://user-images.githubusercontent.com/93444395/230776566-3929ab74-cf63-4666-ab23-3e8d9bd9995e.png)
