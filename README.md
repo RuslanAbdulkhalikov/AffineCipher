@@ -1,2 +1,6 @@
-# Affine-cipher
-affine cipher encryption &amp; decryption
+# Affine cipher
+
+### Encryption example
+
+Input text: AFFINECIPHER
+
