@@ -2,9 +2,9 @@ def Decryption(source_text, alphabet, replace_choice):
     result = ""
     temp = []
     do = []
-    if replace_choice in "ДадаYesyes":
-        a = int(input("Ключ A: "))
-        b = int(input("Ключ B: "))
+    if replace_choice in "Yesyes":
+        a = int(input("key A: "))
+        b = int(input("key B: "))
         MultiA = [x for x in range(1, 50) if 1 == (x * a) % len(alphabet)][0]
         for i in range(len(source_text)):
             for j in range(len(alphabet)):
@@ -14,9 +14,9 @@ def Decryption(source_text, alphabet, replace_choice):
         for i in range(len(temp)): result += str(alphabet[temp[i]])
 
         return result.upper()
-    elif replace_choice in "НетнетNono":
+    elif replace_choice in "Nono":
         alone = []
-        print("Введите замены\na\n|\nb\n...\n")
+        print("enter replacements\na\n|\nb\n...\n")
         c, d, e, f = input(), input(), input(), input()
         for i in range(100):
             for j in range(26):
@@ -41,11 +41,11 @@ def Decryption(source_text, alphabet, replace_choice):
         print(result)
 
         MultiA_1 = [x for x in range(1, 50) if 1 == (x * do[0]) % len(alphabet)][0]
-        input_1 = input("Есть ли при этом преобразования?: ")
+        input_1 = input("are there any transformations at the same time?: ")
         result_1 = ""
         temp_1 = []
-        if input_1 in "ДадаYesyes":
-            word = input("Введите текст: ")
+        if input_1 in "Yesyes":
+            word = input("Enter text: ")
             for i in range(len(word)):
                 for j in range(len(alphabet)):
                     if word[i].lower() == alphabet[j].lower():
@@ -55,6 +55,6 @@ def Decryption(source_text, alphabet, replace_choice):
             return result_1.upper()
 
 
-print(Decryption(input("Текст для расшифрования: "),
-           input("Алфавит: "),
-           input("Известны ли ключи?: ")))
+print(Decryption(input("text to decrypt: "),
+           input("alphabet: "),
+           input("are the keys known?: ")))
